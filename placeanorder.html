@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Baking Life Great</title> 
+	<meta charset="utf-8">
+	<link href="competency.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Baking Life Great</h1>
+	</header>
+	<div>
+		<img src="logo.jpg" alt="Baking Life Great" height="340" style="width:100%">
+	</div>
+	<nav>
+		<b>
+			<a href="index.html">Home</a><br>
+			<a href="bakedgoods.html">Baked Goods</a><br> 
+			<a href="placeanorder.html">Place an Order</a> &nbsp;
+		</b>
+	</nav>
+	<main>
+		<h2>Place your order today!</h2>
+		<h3>Orders available for pickup. For catering options, please contact us.</h3>
+		<p>Required fields are marked with an asterisk *.</p>
+		<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+		
+			<label for="firstName">*First Name:</label>
+			<input type="text" name="firstName" id="firstName" required="required">
+			
+			<label for="lastName">*Last Name:</label>
+			<input type="text" name="lastName" id="lastName" required="required">
+			
+			<label for="email">*E-mail Address:</label>
+			<input type="email" name="email" id="email" required="required">
+			
+			<label for="phone">*Phone Number:</label>
+			<input type="tel" name="phone" id="phone" maxlength="12" required="required">
+			
+			*Please select minimum of 1:<br> 
+			
+			<input type="checkbox" name="cakes" id="cakes"
+				value="yes"> Cake (size and prices vary<br>
+			
+			<input type="checkbox" name="cronuts" id="cronuts"
+				value="yes"> Cronuts/Dossants (amount and prices vary)<br>
+			
+			<input type="checkbox" name="eclaires" id="eclaires"
+				value="yes"> Eclaires (amount and prices vary)<br>
+				
+			<input type="checkbox" name="pies" id="pies"
+				value="yes"> Pie (size and prices vary)<br>
+				
+			<input type="checkbox" name="cupcakes" id="cupcakes"
+				value="yes"> Cupcakes (size and prices vary)<br>
+			
+			<label for="custom">*Customizations:</label>
+				<textarea name="custom" id="custom" rows="2" cols="30"></textarea>
+				
+			
+			<input type="submit">
+		</form>
+	</main>
+	<footer>
+		<small><i>
+			Copyright &copy; 2022 Baking Life Great<br>
+			<a href="mailto:bakinglifegreat@gmail.com">
+				bakinglifegreat@gmail.com
+			</a>
+		</i></small>
+	</footer>
+
+</body>
+</html>
